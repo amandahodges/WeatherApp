@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="WeatherApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPWeather"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Loaded="Page_Loaded"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Name ="WeatherStackPanel">
+        <StackPanel VerticalAlignment="Center">
+            <Image Name="ResultImage" Width="200" Height="200" HorizontalAlignment="Center"/>
+            <TextBlock Name="TempTextBlock" FontSize="52" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="FeelsLikeTextBlock" FontSize="36" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="CloudTextBlock" FontSize="42" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="DescriptionTextBlock" FontSize="36" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="LocationTextBlock" FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="LatLongTextBlock" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
