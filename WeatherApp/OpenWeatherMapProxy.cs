@@ -15,7 +15,7 @@ namespace WeatherApp
         public async static Task<RootObject> GetWeatherImperial(double lat, double lon)
         {
             var http = new HttpClient();
-            var url = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=4140ff68dac3b1250049f3e3fe89f691&units=imperial", lat, lon);
+            var url = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=APP_ID_HERE&units=imperial", lat, lon);
             var response = await http.GetAsync(url);
             var result = await response.Content.ReadAsStringAsync();
             var serializer = new DataContractJsonSerializer(typeof(RootObject));
@@ -29,7 +29,7 @@ namespace WeatherApp
         public async static Task<RootObject> GetWeatherMetric(double lat, double lon)
         {
             var http = new HttpClient();
-            var url = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=4140ff68dac3b1250049f3e3fe89f691&units=metric", lat, lon);
+            var url = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=APP_ID_HERE&units=metric", lat, lon);
             var response = await http.GetAsync(url);
             var result = await response.Content.ReadAsStringAsync();
             var serializer = new DataContractJsonSerializer(typeof(RootObject));
